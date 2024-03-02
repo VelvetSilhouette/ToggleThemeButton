@@ -132,5 +132,7 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <ToggleButton IsChecked="{Binding IsChecked, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"/>
+    <Grid DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}">
+        <ToggleButton IsChecked="{Binding IsChecked}"/>
+    </Grid>
 </UserControl>

@@ -29,7 +29,8 @@ namespace ToggleThemeButton.Controls
         // Using a DependencyProperty as the backing store for IsChecked.  This enables animation, styling, binding, etc...
         public static readonly DependencyProperty IsCheckedProperty =
             DependencyProperty.Register("IsChecked", typeof(bool), typeof(JamesNetToggleButton),
-                new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault, null, null));
+                new FrameworkPropertyMetadata(false, FrameworkPropertyMetadataOptions.BindsTwoWayByDefault,
+                    null, null, false, UpdateSourceTrigger.PropertyChanged));
 
         public JamesNetToggleButton() => InitializeComponent();
     }

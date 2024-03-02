@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ToggleThemeButton"
         xmlns:uc="clr-namespace:ToggleThemeButton.Controls"
         mc:Ignorable="d" WindowStartupLocation="CenterScreen"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Main" Height="450" Width="800">
     <Grid Background="{Binding Background}">
         <uc:JamesNetToggleButton IsChecked="{Binding IsChecked}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
